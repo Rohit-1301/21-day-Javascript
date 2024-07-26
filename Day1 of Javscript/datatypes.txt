@@ -1,0 +1,13 @@
+In javascript there are 2 types of datatypes
+1. Primitive datatypes:- In this datatype there are total 7 different datatypes 
+   1. String return type string 2. Number return type number 3. Boolean return type boolean 4. Null return type null 
+   5. Undefined return type undefined 6. Symbol return type symbol 7. BigInt return type bigint
+   Note:- Primitive data type used stack memory to store the data which means that whenever we try to access the 
+          variable it will give us the copy of that variable and not the original variable.So if we change the 
+          variable it will not change the original variable.
+
+2. Non-Primitive datatypes (Reference datatype):- In this datatype there are total 3 different datatype are present
+        1. Object return type object 2. Function return type function object 3. Array return type array object
+        Note:- In non-primitive data type we are using heap memory to store the data which means that whenever we try to access the
+               variable it will give us the original variable and not the copy of that variable.So if we change the variable it will
+               change the original variable.
