@@ -1,0 +1,12 @@
+In JavaScript, code executes in a sequential manner within the browser's memory.
+The execution involves two phases: the global execution context and the memory creation phase. 
+During the memory creation phase, variables are declared and memory space is allocated, but mathematical functions
+and operations are not executed. Separate execution contexts are created for each function, containing variables and 
+execution threads. The execution context determines the order of execution and the flow of the program. 
+The call stack follows the Last In First Out (LIFO) principle, and each function call creates a new frame in the call stack 
+with its own memory and execution context. Overall, the execution process involves loading, memory phase, and execution phase, 
+and the call stack keeps track of function calls and their execution.
+
+
+
+
