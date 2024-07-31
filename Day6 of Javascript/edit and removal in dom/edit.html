@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM IN JAVASCRIPT</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <ul class="language">
+      <li>JAVASCRIPT</li>
+    </ul>
+  </body>
+  <script>
+    function addlanguage(langname) {
+      let list = document.createElement("li");
+      list.innerHTML = `${langname}`;
+      document.querySelector(".language").appendChild(list);
+    }
+    addlanguage("Python");
+    addlanguage("Java");
+
+    //It is optimized way of the above one
+    function optilang(langname) {
+      let list = document.createElement("li");
+      list.appendChild(document.createTextNode(langname));
+      document.querySelector(".language").appendChild(list);
+    }
+    optilang("C++");
+    optilang("Golang");
+
+    //editing in dom
+    let sec = document.querySelector("li:nth-child(2)");
+    let x = document.createElement("li");
+    x.textContent = "Typescript";
+    sec.replaceWith(x);
+
+    //removing in dom
+    let last = document.querySelector("li:last-child");
+    last.remove();
+  </script>
+</html>
