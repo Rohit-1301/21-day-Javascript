@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bmi.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>
+        This webpage will show you your BMI Index according to your Weight and
+        Height
+      </h1>
+      <form id="bmiForm">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" required />
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" required />
+        <button type="submit" id="btn">Calculate</button>
+      </form>
+      <p>Your BMI Index is:</p>
+      <div id="result"></div>
+      <div class="guide">
+        <h2 style="font-weight: bold">BMI Guide</h2>
+        <p>Underweight: BMI less than 18.5</p>
+        <p>Normal: BMI between 18.6 and 24.9</p>
+        <p>Overweight: BMI greater than 24.9</p>
+      </div>
+    </div>
+    <script src="bmi.js"></script>
+  </body>
+</html>
