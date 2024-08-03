@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async project 1</title>
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learning javascript</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+    <script>
+      let intervalId;
+
+      function changehead() {
+        console.log("Hello, world!");
+      }
+
+      const startButton = document.querySelector("#start");
+      const stopButton = document.querySelector("#stop");
+
+      startButton.addEventListener("click", function () {
+        intervalId = setInterval(changehead, 2000);
+      });
+
+      stopButton.addEventListener("click", function () {
+        clearInterval(intervalId);
+      });
+    </script>
+  </body>
+</html>

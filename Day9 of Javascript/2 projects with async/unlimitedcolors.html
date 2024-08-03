@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlimited Colors</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      h1 {
+        color: #333;
+        margin-top: 20px;
+      }
+
+      h2 {
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      button#start {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      button#start:hover {
+        background-color: #45a049;
+      }
+
+      button#stop {
+        background-color: #f44336;
+        color: white;
+      }
+
+      button#stop:hover {
+        background-color: #e53935;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to changing background color game</h1>
+    <h2>
+      Clisk start to start changing background color and stop to terminate it
+    </h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script src="unlimitedcolors.js"></script>
+  </body>
+</html>

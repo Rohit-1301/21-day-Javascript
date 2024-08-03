@@ -1,0 +1,11 @@
+1.Javascript is a synchronous language which means it will execute the code line by line.
+2.Javascript is a single-threaded language which means it can only execute one line of code at a time.
+3.Due to which it is a slow language compared to other languages like c,c++,java.
+
+"Understanding Asynchronous JavaScript Fundamentals" provides a strong foundation for grasping the theoretical aspects
+ of asynchronous code in JavaScript. It covers the single-threaded nature of JavaScript, the concept of blocking vs non-blocking code,
+ and the importance of writing both types in JavaScript. The video also emphasizes key topics such as Web APIs,
+ promises, execution context, setTimeout, setInterval, the flow of data in a stock system, and the usage of fetch and promises
+ for asynchronous operations. Important points to note include the single-threaded nature of JavaScript, the distinction between 
+ blocking and non-blocking code, the significance of Web APIs, and the use of promises and asynchronous operations for efficient 
+ execution.By Understanding these concept we can write a code in a systematic manner/

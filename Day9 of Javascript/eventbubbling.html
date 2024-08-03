@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #414141;
+        color: aliceblue;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      ul#image {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      ul#image li {
+        margin: 10px;
+      }
+
+      ul#image li img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Media Queries */
+      @media (max-width: 1200px) {
+        ul#image {
+          justify-content: space-around;
+        }
+      }
+
+      @media (max-width: 768px) {
+        ul#image li {
+          flex: 1 1 45%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        ul#image li {
+          flex: 1 1 100%;
+        }
+
+        ul#image li img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <div>
+      <ul id="image">
+        <li id="aot"><img src="aot.jpg" alt="" /></li>
+        <li id="ghoul"><img src="ghoul.jpg" alt="" /></li>
+        <li id="hxh"><img src="hxh.jpg" alt="" /></li>
+        <li id="kny"><img src="kny.jpg" alt="" /></li>
+        <li id="google" style="color: aliceblue;"><a href="https://www.google.com">Go to google</a></li>
+      </ul>
+    </div>
+    <script>
+      //event bubbling
+      document.getElementById("image").addEventListener(
+        "click",
+        function (e) {
+          console.log("You clicked on image");
+        },
+        false
+      );
+      // document.getElementById('aot').addEventListener('click',function(e){
+      //     console.log("You clicked on aot");
+      // },false)
+      //in the event bubbling if we put event in both parent and childern then first it will run first the children one then parent one
+
+      //event capturing
+      // document.getElementById('image').addEventListener('click',function(e){
+      //     console.log("You clicked on image");
+      // },true)
+      // document.getElementById('aot').addEventListener('click',function(e){
+      //     console.log("You clicked on aot");
+      // },true)
+      // in the event capturing if we put event in both parent and childern then first it will run first the parent one then children one
+
+      //to stop event bubbling and capturing we use event propogation method
+      document.getElementById("aot").addEventListener("click", function (e) {
+        console.log("You clicked on aot");
+        e.stopPropagation();
+      });
+
+      //preventdefault it will help us to stop the link to open the url or if we are making button and 
+      //stop him to do any action we use this
+      document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        console.log("google clicked")
+      },false)
+    </script>
+  </body>
+</html>
