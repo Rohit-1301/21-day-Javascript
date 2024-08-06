@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bind in Javascript</title>
+  </head>
+  <body>
+    <button class="btn">Clicked me</button>
+  </body>
+  <script>
+    class React {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        document
+          .querySelector('.btn')
+          .addEventListener("click", this.handleclick.bind(this));
+          //here bind keyword is used to bind the function in it and use it it was used when the react is new.
+          //more I will study when I learn react
+      }
+      handleclick() {
+        console.log("Name of the user is", this.name);
+        console.log("Age of the user is", this.age);
+      }
+    }
+    const user = new React("Abhishek", 20);
+  </script>
+</html>
