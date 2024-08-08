@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather</h1>
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="Enter your Location" />
+        <button>Search</button>
+      </div>
+      <div class="weather-box">
+        <div class="temp">
+          <img src="wet.jpg" alt="Weather Icon" />
+          <p class="temperature"><span>°C</span></p>
+          <p class="description"></p>
+        </div>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="bx bx-water"></i>
+          <div class="text">
+            <span></span>
+          </div>
+          <p>Humidity</p>
+        </div>
+        <div class="wind">
+          <i class="bx bx-wind"></i>
+          <div class="text">
+            <span></span>
+          </div>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .search-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .weather-box {
+    display: none;
+    margin-bottom: 20px;
+  }
+  
+  .weather-box img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .temperature {
+    font-size: 48px;
+    margin: 10px 0;
+  }
+  
+  .description {
+    text-transform: capitalize;
+  }
+  
+  .weather-details {
+    display: flex;
+    justify-content: space-between; /* Distributes items evenly with space between them */
+    align-items: center; /* Aligns items vertically in the center */
+    margin-top: 10px; /* Add some spacing above the details section */
+  }
+  
+  .weather-details .humidity,
+  .weather-details .wind {
+    display: flex;
+    align-items: center;
+  }
+  
+  .weather-details .humidity .text,
+  .weather-details .wind .text {
+    margin-left: 5px; /* Spacing between the icon and text */
+  }
+  
+  .weather-details p {
+    margin: 0; /* Remove default margin from the paragraph tags */
+  }
+  
