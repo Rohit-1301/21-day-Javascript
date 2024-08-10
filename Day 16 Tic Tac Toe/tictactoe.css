@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: rgb(13, 94, 165);
+}
+.game-container {
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .cell {
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #ccc;
+  }
+  
+  .cell.x {
+    background-color: #ff69b4;
+  }
+  
+  .cell.o {
+    background-color: #33cc33;
+  }
+  
+  #resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #6a1616;
+    cursor: pointer;
+  }
+  
+  #resetButton:hover {
+    background-color: #3e8e41;
+  }
+  
+  #status {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
